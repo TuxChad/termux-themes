@@ -20,11 +20,11 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 
 chsh -s zsh
 
-wget -O font.ttf https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/SemiBold/JetBrainsMonoNerdFont-SemiBold.ttf # downloads JetBrainsMonoNerdFont-SemiBold font 
-mv font.ttf ~/.termux/ # set as default font
-
 wget https://github.com/dylanaraps/pfetch/raw/master/pfetch
+chmod +x pfetch
 mv pfetch /data/data/com.termux/files/usr/bin/
+
+echo -n > /data/data/com.termux/files/usr/etc/motd
 
 echo "oh-my-zsh install complete!\nChoose your color scheme now~"
 $HOME/.termux/colors.sh
