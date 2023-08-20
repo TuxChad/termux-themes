@@ -21,6 +21,7 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 chsh -s zsh
 
 wget -O pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
+chmod +x pfetch 
 mv pfetch /data/data/com.termux/files/usr/bin/
 
 echo -n > /data/data/com.termux/files/usr/etc/motd
