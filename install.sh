@@ -20,9 +20,11 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 
 chsh -s zsh
 
-wget https://github.com/dylanaraps/pfetch/raw/master/pfetch
+wget -O pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
 chmod +x pfetch
-mv pfetch /data/data/com.termux/files/usr/bin/
+mv pfetch ~/.local/bin/
+mkdir -p ~/.local/bin && mv pfetch ~/.local/bin/
+echo "alias pfetch=~/.local/bin/pfetch" >> ~/.zshrc
 
 echo -n > /data/data/com.termux/files/usr/etc/motd
 
