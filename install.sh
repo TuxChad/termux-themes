@@ -2,7 +2,7 @@
 termux-setup-storage
 
 apt update
-yes | apt install git zsh 
+yes | apt install git zsh wget 
 git clone https://github.com/TuxChad/termux-themes.git "$HOME/termux-theme" --depth 1
 
 mv "$HOME/.termux" "$HOME/.termux.backup.$(date +%Y.%m.%d-%H:%M:%S)"
@@ -21,10 +21,7 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 chsh -s zsh
 
 wget -O pfetch https://github.com/dylanaraps/pfetch/raw/master/pfetch
-chmod +x pfetch
-mv pfetch ~/.local/bin/
-mkdir -p ~/.local/bin && mv pfetch ~/.local/bin/
-echo "alias pfetch=~/.local/bin/pfetch" >> ~/.zshrc
+mv pfetch /data/data/com.termux/files/usr/bin/
 
 echo -n > /data/data/com.termux/files/usr/etc/motd
 
