@@ -83,3 +83,5 @@ This repository is licensed under the [MIT License](LICENSE). You possess the fr
 ---
 
 Experience the fusion of Termux Themes and pfetch, right here in this repository! If you have queries, feedback, or suggestions, feel free to reach out. Embark on a journey of creative terminal customization and system insight!
+
+Authour : Srinath 
